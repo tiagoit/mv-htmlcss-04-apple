@@ -62,7 +62,6 @@ nav ul li:last-child img {
 
 nav ul li:last-child input {
   max-width: 80%;
-  background-color: grey;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   background: linear-gradient(to bottom, rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94%);
