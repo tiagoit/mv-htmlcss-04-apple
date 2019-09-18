@@ -98,15 +98,15 @@ main .main-content {
 }
 
 main h1 {
-  top: 300px;
+  top: 220px;
 }
 
 main h2 {
-  top: 320px;
+  top: 240px;
 }
 
 main a {
-  top: 360px;
+  top: 280px;
   left: 0 !important;
   text-decoration: none;
   color: #fff;
