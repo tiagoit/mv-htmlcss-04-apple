@@ -4,8 +4,7 @@
 
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
-    "Lucida Sans Regular", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Grande", Verdana, sans-serif;
 }
 
 /* nav */
@@ -17,17 +16,7 @@ nav {
   width: 80vw;
   margin: 0 auto;
   border-radius: 12px;
-  background: -webkit-gradient(
-      linear,
-      0 0,
-      0 100%,
-      from(rgba(0, 0, 0, 0.2)),
-      color-stop(0.05, rgba(0, 0, 0, 0)),
-      color-stop(0.97, rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0.45))
-    ),
-    -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2))),
-    -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+  background: linear-gradient(to bottom,rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94%);
 }
 
 nav ul {
@@ -41,7 +30,6 @@ nav ul {
 }
 
 nav ul li {
-  border: 1px solid #fff;
   padding-top: 8px;
   width: calc(100% / 9);
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -66,18 +54,7 @@ nav ul li:last-child input {
   background-color: grey;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 12px;
-
-  background: -webkit-gradient(
-      linear,
-      0 0,
-      0 100%,
-      from(rgba(0, 0, 0, 0.2)),
-      color-stop(0.05, rgba(0, 0, 0, 0)),
-      color-stop(0.97, rgba(0, 0, 0, 0)),
-      to(rgba(0, 0, 0, 0.45))
-    ),
-    -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2))),
-    -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+  background: linear-gradient(to bottom,rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94%);
 }
 
 /* main */
@@ -117,13 +94,13 @@ main a:hover {
 }
 
 /* section */
-section {
+aside {
   display: flex;
   justify-content: space-between;
   margin-top: 4px;
 }
 
-section img {
+aside img {
   max-width: 25%;
 }
 
