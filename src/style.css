@@ -7,6 +7,17 @@ body {
   font-family: "Lucida Grande", Verdana, sans-serif;
 }
 
+/* section */
+aside {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+aside img {
+  max-width: 25%;
+}
+
 /* nav */
 nav {
   position: absolute;
@@ -16,7 +27,7 @@ nav {
   width: 80vw;
   margin: 0 auto;
   border-radius: 12px;
-  background: linear-gradient(to bottom,rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94%);
+  background: linear-gradient(to bottom, rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94%);
 }
 
 nav ul {
@@ -54,7 +65,7 @@ nav ul li:last-child input {
   background-color: grey;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 12px;
-  background: linear-gradient(to bottom,rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94%);
+  background: linear-gradient(to bottom, rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94%);
 }
 
 /* main */
@@ -62,7 +73,6 @@ main {
   height: 75vh;
   background-image: url("./img/your_verse_hero.jpg");
   background-position: bottom;
-
   text-align: center;
   color: #fff;
 }
@@ -91,17 +101,6 @@ main a {
 
 main a:hover {
   text-decoration: underline;
-}
-
-/* section */
-aside {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 4px;
-}
-
-aside img {
-  max-width: 25%;
 }
 
 /* footer */
