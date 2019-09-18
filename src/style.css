@@ -1,7 +1,159 @@
+* {
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "Lucida Sans Regular", Geneva, Verdana, sans-serif;
+}
+
 /* nav */
+nav {
+  position: absolute;
+  height: 40px;
+  top: 100px;
+  right: 10vw;
+  width: 80vw;
+  margin: 0 auto;
+  border-radius: 12px;
+  background: -webkit-gradient(
+      linear,
+      0 0,
+      0 100%,
+      from(rgba(0, 0, 0, 0.2)),
+      color-stop(0.05, rgba(0, 0, 0, 0)),
+      color-stop(0.97, rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0.45))
+    ),
+    -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2))),
+    -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+nav ul li {
+  border: 1px solid #fff;
+  padding-top: 8px;
+  width: calc(100% / 9);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+nav ul li:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+nav ul li:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+nav ul li:last-child img {
+  display: none;
+}
+
+nav ul li:last-child input {
+  max-width: 80%;
+  background-color: grey;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+
+  background: -webkit-gradient(
+      linear,
+      0 0,
+      0 100%,
+      from(rgba(0, 0, 0, 0.2)),
+      color-stop(0.05, rgba(0, 0, 0, 0)),
+      color-stop(0.97, rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0.45))
+    ),
+    -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2))),
+    -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+}
 
 /* main */
+main {
+  height: 75vh;
+  background-image: url("./img/your_verse_hero.jpg");
+  background-position: bottom;
+
+  text-align: center;
+  color: #fff;
+}
+
+main .main-content {
+  position: relative;
+  max-width: 70%;
+  left: 15%;
+  font-weight: 100;
+}
+
+main h1 {
+  top: 300px;
+}
+
+main h2 {
+  top: 320px;
+}
+
+main a {
+  top: 360px;
+  left: 0 !important;
+  text-decoration: none;
+  color: #fff;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
 
 /* section */
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+section img {
+  max-width: 25%;
+}
 
 /* footer */
+footer {
+  font-size: 11px;
+  padding: 28px 80px;
+}
+
+footer div:first-child {
+  display: flex;
+}
+
+footer div:first-child > div.f-left,
+footer div:first-child > div.f-right {
+  width: 50%;
+}
+
+footer div:first-child > div.f-right ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer div:first-child > div.f-right ul a {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+footer div.copyright {
+  margin-top: 20px;
+}
