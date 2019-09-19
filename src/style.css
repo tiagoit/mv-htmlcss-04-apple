@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Lucida Grande", Verdana, sans-serif;
+}
+
+/* section */
+aside {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+aside img {
+  max-width: 25%;
+}
+
+/* nav */
+nav {
+  position: absolute;
+  height: 40px;
+  top: 100px;
+  right: 10vw;
+  width: 80vw;
+  margin: 0 auto;
+  border-radius: 12px;
+  background: linear-gradient(to bottom, rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94%);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+nav ul li {
+  padding-top: 8px;
+  width: calc(100% / 9);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+nav ul li:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+nav ul li:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+nav ul li:last-child img {
+  display: none;
+}
+
+nav ul li:last-child input {
+  max-width: 80%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  background: linear-gradient(to bottom, rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94%);
+}
+
+/* main */
+main {
+  height: 75vh;
+  background-image: url("./img/your_verse_hero.jpg");
+  background-position: bottom;
+  text-align: center;
+  color: #fff;
+}
+
+main .main-content {
+  position: relative;
+  max-width: 70%;
+  left: 15%;
+  font-weight: 100;
+}
+
+main h1 {
+  top: 220px;
+}
+
+main h2 {
+  top: 240px;
+}
+
+main a {
+  top: 280px;
+  left: 0 !important;
+  text-decoration: none;
+  color: #fff;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+/* footer */
+footer {
+  font-size: 11px;
+  padding: 28px 80px;
+}
+
+footer div:first-child {
+  display: flex;
+}
+
+footer div:first-child > div.f-left,
+footer div:first-child > div.f-right {
+  width: 50%;
+}
+
+footer div:first-child > div.f-right ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer div:first-child > div.f-right ul a {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+footer div.copyright {
+  margin-top: 20px;
+}
